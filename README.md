@@ -23,6 +23,7 @@ IP Prefix untuk IT06
 - Seluruh node yang ada pada topologi harus dapat TERKONEKSI satu sama lain dan dapat melakukan PING ke node lainnya yang ada di topologi
 
 # Rute
+![RUTE VLSM](https://github.com/user-attachments/assets/a62f066d-d899-43c0-bf44-4c2fcddcddbf)
 
 # Tree
 
