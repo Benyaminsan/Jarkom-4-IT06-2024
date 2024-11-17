@@ -54,6 +54,8 @@ IP Prefix untuk IT06
 
 # Tree
 
+![WhatsApp Image 2024-11-17 at 19 55 35_9a9cf0b9](https://github.com/user-attachments/assets/795798d5-a371-40bf-bf76-d994019d9b09)
+
 | Subnet | Network ID       | Netmask          | Broadcast       | Range IP                   |
 |--------|------------------|------------------|-----------------|----------------------------|
 | A11    | 192.236.6.16     | 255.255.248.0    | 192.236.7.255   | 192.236.6.17 - 192.236.7.254|
