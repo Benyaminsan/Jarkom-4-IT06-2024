@@ -108,3 +108,447 @@ IP Prefix untuk IT06
 | A22    | 192.236.12.12    | 255.255.255.192  | 192.236.12.63   | 192.236.12.13 - 192.236.12.62|
 
 # CPT (CIDR)
+
+# CONFIG NODE
+
+# A1 - Hololive
+- Hololive Router
+```
+auto eth1
+iface eth1 inet static
+    address 192.236.0.1
+    netmask 255.255.255.252
+```
+- Holo-EN Router
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.0.2
+    netmask 255.255.255.252
+    gateway 192.236.0.1
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+# A2 - Hololive
+- Hololive Router
+```
+auto eth2
+iface eth2 inet static
+    address 192.236.0.5
+    netmask 255.255.255.252
+```
+- Holo-ID Router
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.0.6
+    netmask 255.255.255.252
+    gateway 192.236.0.5
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+# A3 - AREA15
+- AREA15 Router
+```
+auto eth1
+iface eth1 inet static
+    address 192.236.0.9
+    netmask 255.255.252.0
+```
+- Risu
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.0.10
+    netmask 255.255.252.0
+    gateway 192.236.0.9
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+- Moona
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.0.11
+    netmask 255.255.252.0
+    gateway 192.236.0.9
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+- Lofi
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.0.12
+    netmask 255.255.252.0
+    gateway 192.236.0.9
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+# A4 - Holoro
+- Holoro Router
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.4.1
+    netmask 255.255.255.252
+```
+# A5 - Holoro
+- Holoro Router
+```
+auto eth1
+iface eth1 inet static
+    address 192.236.4.5
+    netmask 255.255.255.192
+```
+- Ollie
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.4.6
+    netmask 255.255.255.192
+    gateway 192.236.4.5
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+- Anya
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.4.7
+    netmask 255.255.255.192
+    gateway 192.236.4.5
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+- Reine
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.4.8
+    netmask 255.255.255.192
+    gateway 192.236.4.5
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+# A6 - Holoro
+- Holoro Router
+```
+auto eth2
+iface eth2 inet static
+    address 192.236.4.65
+    netmask 255.255.255.252
+```
+
+# A7 - Holoh3ro
+- Holoh3ro Router
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.4.69
+    netmask 255.255.254.0
+```
+- Zeta
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.4.70
+    netmask 255.255.254.0
+    gateway 192.236.4.69
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+- Kaela
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.4.71
+    netmask 255.255.254.0
+    gateway 192.236.4.69
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+- Kobo
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.4.72
+    netmask 255.255.254.0
+    gateway 192.236.4.69
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+# A8 - Hololive (Holo-JP Gateway)
+- Hololive Router
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.6.1
+    netmask 255.255.255.252
+```
+# A9 - DEV_IS
+- DEV_IS Router
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.6.5
+    netmask 255.255.255.252
+    gateway 192.236.6.4
+```
+
+# A10 - AREA15
+- AREA15 Router
+```
+auto eth1
+iface eth1 inet static
+    address 192.236.6.9
+    netmask 255.255.255.248
+```
+
+- Ririka_Raden
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.6.10
+    netmask 255.255.255.248
+    gateway 192.236.6.9
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+- Ao
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.6.11
+    netmask 255.255.255.248
+    gateway 192.236.6.9
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+- Hajime_Kanade
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.6.12
+    netmask 255.255.255.248
+    gateway 192.236.6.9
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+# A11 - GEN:0
+- GEN:0 Router
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.6.16
+    netmask 255.255.248.0
+```
+- MiComet
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.6.17
+    netmask 255.255.248.0
+    gateway 192.236.6.16
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+- Sora_Robo_AZKi
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.6.18
+    netmask 255.255.248.0
+    gateway 192.236.6.16
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+# A12 - GEN:1 (GAMERS Router)
+- GEN:1 Router
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.8.1
+    netmask 255.255.255.252
+    gateway 192.236.8.0
+```
+
+# A13 - GEN:1 (Switch - GAMERS)
+- Korone
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.8.5
+    netmask 255.255.255.128
+    gateway 192.236.8.4
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+- Okayu
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.8.6
+    netmask 255.255.255.128
+    gateway 192.236.8.4
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+- Mio
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.8.7
+    netmask 255.255.255.128
+    gateway 192.236.8.4
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+# A14 - GEN:1 (Switch - Member)
+- FBK_Matsuri
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.8.129
+    netmask 255.255.254.0
+    gateway 192.236.8.128
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+- Aki_Hachama
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.8.130
+    netmask 255.255.254.0
+    gateway 192.236.8.128
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+# A15 - Holo-EN
+- Holo-EN Router
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.10.1
+    netmask 255.255.255.252
+```
+
+# A16 - Holo-EN (HoloAdvent Gateway)
+- HoloAdvent Router
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.10.5
+    netmask 255.255.255.252
+    gateway 192.236.10.4
+```
+
+# A17 - HoloAdvent (Switch)
+- FuwaMoco
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.10.9
+    netmask 255.255.255.224
+    gateway 192.236.10.8
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+- Shiori_Nerissa
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.10.10
+    netmask 255.255.255.224
+    gateway 192.236.10.8
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+- Biboo
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.10.11
+    netmask 255.255.255.224
+    gateway 192.236.10.8
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+# A18 - Holo-EN (HoloMyth Gateway)
+- HoloMyth Router
+```
+ auto eth0
+iface eth0 inet static
+    address 192.236.10.33
+    netmask 255.255.255.252
+    gateway 192.236.10.32
+```
+
+# A19 - HoloAdvent (Switch - Kiara/Gura)
+- Kiara_Calli
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.10.37
+    netmask 255.255.254.0
+    gateway 192.236.10.36
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+- Gura_Ame_Ina
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.10.38
+    netmask 255.255.254.0
+    gateway 192.236.10.36
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
+
+# 20 - HoloPromise
+- HoloPromise Router
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.12.1
+    netmask 255.255.255.252
+    gateway 192.236.12.0
+```
+
+# A21 - Project-Hope (Irys)
+- Router Project-Hope
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.12.4
+    netmask 255.255.255.248
+```
+  
+- Irys
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.12.5
+    netmask 255.255.255.248
+    gateway 192.236.12.4
+    up echo 192.168.122.1 > /etc/resolv.conf
+```    
+# A22 - Switch 4 (Kronii_Mumei & Bae_Fauna)
+-Router Holo-Council
+```
+auto eth1
+iface eth1 inet static
+    address 192.236.12.12
+    netmask 255.255.255.192
+```
+    
+- Kronii_Mumei
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.12.13
+    netmask 255.255.255.192
+    gateway 192.236.12.12
+    up echo 192.168.122.1 > /etc/resolv.conf
+ ```   
+- Bae_Fauna
+```
+auto eth0
+iface eth0 inet static
+    address 192.236.12.14
+    netmask 255.255.255.192
+    gateway 192.236.12.12
+    up echo 192.168.122.1 > /etc/resolv.conf
+```
